@@ -31,26 +31,6 @@ class FastlaneTestUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-<<<<<<< HEAD
-        XCUIDevice.shared().orientation = .faceUp
-        XCUIDevice.shared().orientation = .faceUp
-        
-        let app = XCUIApplication()
-        let usernameElementsQuery = app.otherElements.containing(.staticText, identifier:"Username")
-        let textField = usernameElementsQuery.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("wasin")
-        
-        // test
-        XCTAssert(textField.value as! String == "wasin");
-        
-        let secureTextField = usernameElementsQuery.children(matching: .secureTextField).element
-        secureTextField.tap()
-        secureTextField.typeText("thisisabook")
-        
-        app.buttons["Switch"].tap()
-=======
->>>>>>> 617b9c32c42c208a4f3aa5978374e96ece3f10a7
     }
     
 }

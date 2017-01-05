@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9688BCEB4D87CE8F5CECC0954B2EB617A65D77C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9688BCEB4D87CE8F5CECC0954B2EB617A65D77C2" : 9223372036854775807,
+    "38BBCB50B773C07BB50457F2605DF275A34B4A9C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "794029A9-F2FC-496C-A80C-5D97CBFBCAC2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9688BCEB4D87CE8F5CECC0954B2EB617A65D77C2" : "ssp1-fastlane\/",
+    "38BBCB50B773C07BB50457F2605DF275A34B4A9C" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FastlaneTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FastlaneTest\/FastlaneTest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/haxpor\/ssp1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38BBCB50B773C07BB50457F2605DF275A34B4A9C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/haxpor\/ssp1-fastlane",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9688BCEB4D87CE8F5CECC0954B2EB617A65D77C2"
+    }
+  ]
+}
