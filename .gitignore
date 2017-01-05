@@ -1,0 +1,5 @@
+# output folder from automated testing
+FastlaneTest/output/**
+
+# user temp data
+xcuserdata/**
