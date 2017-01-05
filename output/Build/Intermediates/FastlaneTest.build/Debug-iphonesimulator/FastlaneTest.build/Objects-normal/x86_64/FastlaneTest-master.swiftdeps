@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "e194313ec2989105b93353ce2656f4fa"
+build_time: [536905896, 776917000]
+inputs:
+  "/Volumes/Slave/Data/Projects/ssp1/ssp1-test-fastlane/FastlaneTest/FastlaneTest/ViewController.swift": [536902847, 0]
+  "/Volumes/Slave/Data/Projects/ssp1/ssp1-test-fastlane/FastlaneTest/FastlaneTest/AppDelegate.swift": [536902847, 0]
