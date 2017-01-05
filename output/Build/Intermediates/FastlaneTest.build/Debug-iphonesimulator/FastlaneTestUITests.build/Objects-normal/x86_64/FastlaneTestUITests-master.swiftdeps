@@ -1,5 +1,0 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "71fced83b427c4d08b7189af3cf68ad3"
-build_time: [536906481, 751301000]
-inputs:
-  "/Volumes/Slave/Data/Projects/ssp1/ssp1-test-fastlane/FastlaneTest/FastlaneTestUITests/FastlaneTestUITests.swift": [536906478, 0]

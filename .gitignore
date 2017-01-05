@@ -1,5 +1,5 @@
 # output folder from automated testing
-FastlaneTest/output/**
+output
 
 # user temp data
 xcuserdata/**
