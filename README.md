@@ -1,4 +1,4 @@
-# ssp1-test-fastlane
+# ssp1-fastlane
 
 A simple swift project to test integration with fastlane.
 
