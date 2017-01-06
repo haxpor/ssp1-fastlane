@@ -1,0 +1,11 @@
+# ignore certficate files
+*.cer
+*.certSigningRequest
+*.p12
+
+# ignore output files
+*.ipa
+*.zip
+
+# ignore mobileprovision file
+*.mobileprovision

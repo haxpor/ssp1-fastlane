@@ -14,6 +14,7 @@
 		1EB98DE51E1DF7C00082BA10 /* FastlaneTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98DE41E1DF7C00082BA10 /* FastlaneTestTests.swift */; };
 		1EB98DF01E1DF7C00082BA10 /* FastlaneTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98DEF1E1DF7C00082BA10 /* FastlaneTestUITests.swift */; };
 		1EC268211E1FA6650052EA8C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC268231E1FA6650052EA8C /* Storyboard.storyboard */; };
+		1EC2682B1E1FB3830052EA8C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2682A1E1FB3830052EA8C /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1EC268271E1FA67D0052EA8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Storyboard.strings"; sourceTree = "<group>"; };
 		1EC268281E1FA68A0052EA8C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1EC268291E1FA68A0052EA8C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Storyboard.strings; sourceTree = "<group>"; };
+		1EC2682A1E1FB3830052EA8C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		1EB98DEE1E1DF7C00082BA10 /* FastlaneTestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				1EC2682A1E1FB3830052EA8C /* SnapshotHelper.swift */,
 				1EB98DEF1E1DF7C00082BA10 /* FastlaneTestUITests.swift */,
 				1EB98DF11E1DF7C00082BA10 /* Info.plist */,
 			);
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB98DF01E1DF7C00082BA10 /* FastlaneTestUITests.swift in Sources */,
+				1EC2682B1E1FB3830052EA8C /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
