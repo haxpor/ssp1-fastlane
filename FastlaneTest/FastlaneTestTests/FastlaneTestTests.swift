@@ -24,22 +24,7 @@ class FastlaneTestTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        var dummy = 1
-        var dummy2 = 1
-        var result = dummy + dummy2
-        XCTAssert(result == 2)
-    }
-    
-    func testExampleFailed() {
-        XCTAssert(false)
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-            var result = 1 + 1
-        }
+        XCTAssert(true)
     }
     
 }

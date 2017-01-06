@@ -28,9 +28,34 @@ class FastlaneTestUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUsernameIsWasin() {
+        let firstnametextfieldTextField = XCUIApplication().textFields["firstNameTextField"]
+        firstnametextfieldTextField.tap()
+        firstnametextfieldTextField.typeText("wasin")
+
+        XCTAssert(firstnametextfieldTextField.value as! String == "wasin")
     }
     
+    func testLastnameIsThonkaew() {
+        let lastnametextfieldTextField = XCUIApplication().textFields["lastNameTextField"]
+        lastnametextfieldTextField.tap()
+        lastnametextfieldTextField.typeText("thonkaew")
+        
+        XCTAssert(lastnametextfieldTextField.value as! String == "thonkaew")
+    }
+    
+    func testShowNewPage() {
+        let app = XCUIApplication()
+        var backButton = app.buttons["backButton"]
+        // backbutton should not exist
+        XCTAssert(backButton.exists == false)
+        
+        let openButton = app.buttons["openButton"]
+        openButton.tap()
+        
+        // query back button again
+        backButton = app.buttons["backButton"]
+        // check exists
+        XCTAssert(backButton.exists)
+    }
 }
