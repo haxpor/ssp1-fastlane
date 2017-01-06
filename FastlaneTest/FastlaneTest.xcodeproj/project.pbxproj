@@ -13,7 +13,7 @@
 		1EB98DDA1E1DF7C00082BA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB98DD81E1DF7C00082BA10 /* LaunchScreen.storyboard */; };
 		1EB98DE51E1DF7C00082BA10 /* FastlaneTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98DE41E1DF7C00082BA10 /* FastlaneTestTests.swift */; };
 		1EB98DF01E1DF7C00082BA10 /* FastlaneTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB98DEF1E1DF7C00082BA10 /* FastlaneTestUITests.swift */; };
-		1EFB95531E1E5E3D0071CC77 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB95521E1E5E3D0071CC77 /* Storyboard.storyboard */; };
+		1EC268211E1FA6650052EA8C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC268231E1FA6650052EA8C /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,12 @@
 		1EB98DEB1E1DF7C00082BA10 /* FastlaneTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB98DEF1E1DF7C00082BA10 /* FastlaneTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneTestUITests.swift; sourceTree = "<group>"; };
 		1EB98DF11E1DF7C00082BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EFB95521E1E5E3D0071CC77 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1EC268221E1FA6650052EA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
+		1EC268251E1FA6680052EA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Storyboard.strings; sourceTree = "<group>"; };
+		1EC268261E1FA67D0052EA8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1EC268271E1FA67D0052EA8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Storyboard.strings"; sourceTree = "<group>"; };
+		1EC268281E1FA68A0052EA8C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1EC268291E1FA68A0052EA8C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Storyboard.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +107,7 @@
 				1EB98DD61E1DF7C00082BA10 /* Assets.xcassets */,
 				1EB98DD81E1DF7C00082BA10 /* LaunchScreen.storyboard */,
 				1EB98DDB1E1DF7C00082BA10 /* Info.plist */,
-				1EFB95521E1E5E3D0071CC77 /* Storyboard.storyboard */,
+				1EC268231E1FA6650052EA8C /* Storyboard.storyboard */,
 			);
 			path = FastlaneTest;
 			sourceTree = "<group>";
@@ -237,7 +242,7 @@
 			files = (
 				1EB98DDA1E1DF7C00082BA10 /* LaunchScreen.storyboard in Resources */,
 				1EB98DD71E1DF7C00082BA10 /* Assets.xcassets in Resources */,
-				1EFB95531E1E5E3D0071CC77 /* Storyboard.storyboard in Resources */,
+				1EC268211E1FA6650052EA8C /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +308,21 @@
 			isa = PBXVariantGroup;
 			children = (
 				1EB98DD91E1DF7C00082BA10 /* Base */,
+				1EC268261E1FA67D0052EA8C /* zh-Hans */,
+				1EC268281E1FA68A0052EA8C /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1EC268231E1FA6650052EA8C /* Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EC268221E1FA6650052EA8C /* Base */,
+				1EC268251E1FA6680052EA8C /* en */,
+				1EC268271E1FA67D0052EA8C /* zh-Hans */,
+				1EC268291E1FA68A0052EA8C /* fr */,
+			);
+			name = Storyboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -363,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "96g-wO-1v8"; */
+"96g-wO-1v8.text" = "Prénom";
+
+/* Class = "UILabel"; text = "Last name"; ObjectID = "MtG-E5-fWm"; */
+"MtG-E5-fWm.text" = "Nom de famille";
+
+/* Class = "UIButton"; normalTitle = "Open"; ObjectID = "b6J-WX-DEu"; */
+"b6J-WX-DEu.normalTitle" = "Ouvert";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "zST-r0-YG1"; */
+"zST-r0-YG1.normalTitle" = "Arrière";
