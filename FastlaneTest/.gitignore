@@ -9,3 +9,9 @@
 
 # ignore mobileprovision file
 *.mobileprovision
+
+# output report file
+report.xml
+
+# swp file
+*.swp
