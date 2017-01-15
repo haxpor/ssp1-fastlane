@@ -26,6 +26,8 @@ But first make sure you install [fastlane](https://github.com/fastlane/fastlane)
 * `fastlane test` - will allow testing for both normal tests and UI tests
 * `fastlane screenshots` - will take screenshots and output them into `./screenshots` folder. Taking screenshots done as part of UI Tests.
 
+More information on steps, along with visual results at my blog post ["Hands-On Fastlane"](https://wasin.io/blog/2017/01/15/hands-on-fastlane.html).
+
 # Reference
 
 * [xctool](https://github.com/facebook/xctool) - extension of Apple's xcodebuild

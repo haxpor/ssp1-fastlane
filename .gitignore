@@ -3,3 +3,6 @@ output
 
 # user temp data
 xcuserdata/**
+
+# generated screenshots from `fastlane screenshots`
+FastlaneTest/screenshots
