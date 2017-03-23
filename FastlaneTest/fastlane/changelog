@@ -1,0 +1,5 @@
+# Add changelog text for each testflight release
+# For AppStore release, better use metadata/
+#
+Test release build 3
+This is a second line

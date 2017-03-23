@@ -1,7 +1,7 @@
 app_identifier "io.wasin.FastlaneTest" # The bundle identifier of your app
 apple_id "wasin@wasin.io" # Your Apple email address
 
-team_id "XGKHW634KL"  # Developer Portal Team ID
+itc_team_id "1900496"  # Developer Portal Team ID
 
 # you can even provide different app identifiers, Apple IDs and team names per lane:
 # More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md

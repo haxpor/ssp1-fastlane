@@ -11,15 +11,33 @@
 
 # This is the minimum version number required.
 # Update this, if you use features of a newer version
-fastlane_version "2.5.0"
+fastlane_version "2.22.0"
 
 default_platform :ios
 
+# Read changelog text from file ignoring comment lines
+# Return string as content of file
+def readFileButIgnoreComment(filepath)
+  a = ["#"]
+  file_content = ""
+  File.open(filepath).each_line do |line|
+      line.chomp!
+      next if line.empty? || a.any? { |a| line =~ /#{a}/ }
+      
+      file_content = file_content + line + "\n"
+  end
+
+  return file_content
+end
+
 platform :ios do
+  changelog = readFileButIgnoreComment("changelog")
+
   before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    
-    
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+    ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
+    ENV["FASTLANE_ITUNES_TRANSPORTER_USE_SHELL_SCRIPT"] = "1"
+    print changelog
   end
 
   desc "Upload app to iTunes connect"
@@ -45,11 +63,29 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
+    increment_build_number
+
     cert
     sigh
-    gym # Build your app - more options available
-    pilot
+
+    # match(type: "appstore") # more information: https://codesigning.guide
+    gym(scheme: "FastlaneTest") # Build your app - more options available
+    pilot(
+        changelog: changelog,
+        skip_waiting_for_build_processing: true
+    )
+
+    # commit code to git
+    commit_version_bump(
+        message: 'Build Version Bump by Fastlane',
+        force: true
+    )
+
+    # get build number then tag it on git
+    build_number = Actions.lane_context[SharedValues::BUILD_NUMBER]
+    add_git_tag(tag: "testflight-#{build_number}")
+    # push to remote
+    push_to_git_remote
 
     # sh "your_script.sh"
     # You can also use other beta testing services here (run `fastlane actions`)
@@ -57,11 +93,25 @@ platform :ios do
 
   desc "Deploy a new version to the App Store"
   lane :release do
+    increment_build_number
+    
     # match(type: "appstore")
     # snapshot
-    gym # Build your app - more options available
+    gym(scheme: "FastlaneTest") # Build your app - more options available
     deliver(force: true)
     # frameit
+    
+    # commit code to git
+    commit_version_bump(
+        message: 'Version bump by fastlane',
+        force: true
+    )
+
+    # get build number then tag it on git
+    build_number = Actions.lane_context[SharedValues::BUILD_NUMBER]
+    add_git_tag(tag: "appstore-#{build_number}")
+    # push to remote
+    push_to_git_remote
   end
 
   # You can define as many lanes as you want
@@ -69,16 +119,18 @@ platform :ios do
   after_all do |lane|
     # This block is called, only if the executed lane was successful
 
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
+    slack(
+       message: "Successfully deployed new App Update."
+    )
+
+    clean_build_artifacts
   end
 
   error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
+    slack(
+      message: exception.message,
+      success: false
+    )
   end
 end
 

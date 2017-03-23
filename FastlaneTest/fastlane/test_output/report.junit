@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='FastlaneTestUITests.xctest' tests='3' failures='0'>
   <testsuite name='FastlaneTestUITests.FastlaneTestUITests' tests='3' failures='0'>
-    <testcase classname='FastlaneTestUITests.FastlaneTestUITests' name='testLastnameIsThonkaew' time='11.585'/>
-    <testcase classname='FastlaneTestUITests.FastlaneTestUITests' name='testShowNewPage' time='10.260'/>
-    <testcase classname='FastlaneTestUITests.FastlaneTestUITests' name='testUsernameIsWasin' time='11.824'/>
+    <testcase classname='FastlaneTestUITests.FastlaneTestUITests' name='testLastnameIsThonkaew' time='11.036'/>
+    <testcase classname='FastlaneTestUITests.FastlaneTestUITests' name='testShowNewPage' time='9.393'/>
+    <testcase classname='FastlaneTestUITests.FastlaneTestUITests' name='testUsernameIsWasin' time='10.610'/>
   </testsuite>
 </testsuites>
