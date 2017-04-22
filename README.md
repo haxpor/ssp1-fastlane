@@ -11,7 +11,7 @@ Follow the following steps
 1. Go to repository folder
 2. Execute `xcodebuild test -project FastlaneTest/FastlaneTest.xcodeproj -scheme FastlaneTestTests -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 6s'`
 
-## UITests
+## UI Tests
 
 1. Go to repository folder
 2. Execute `xcodebuild test -project FastlaneTest/FastlaneTest.xcodeproj -scheme FastlaneTestUITests -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 6s'` without capturing screenshots and saving out to files or `xcodebuild test -project FastlaneTest/FastlaneTest.xcodeproj -scheme FastlaneTestUITests -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 6s' -derivedDataPath './output'` that will also capture screenshot into `./output` folder too.
